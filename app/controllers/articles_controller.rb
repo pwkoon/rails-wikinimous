@@ -30,7 +30,7 @@ class ArticlesController < ApplicationController
     @article.destroy
     redirect_to articles_path, status: :see_other
   end
-end
+
 
 private
 
@@ -41,3 +41,5 @@ private
   def set_article
     @article = Article.find(params[:id])
   end
+
+end
